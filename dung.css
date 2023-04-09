@@ -1,0 +1,31 @@
+/* .card-body {
+    background-image: url(./anh/bg2.png); */
+
+/* .card-title, .card-text {
+    color: grey;
+} */
+.card-img-top {
+    width: 150px;
+    height: 270px;
+    object-fit: cover;
+}
+
+#edu .card {
+    /* height: 300px; */
+}
+
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 150px;
+}
+
+.col-3.mb-3 {
+    min-width: 350px;
+}
+
+div#edu {
+    justify-content: space-around;
+}
