@@ -15,67 +15,311 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="./result_quiz.html">
 
+
 </head>
 <body>
+    
     <!-- header -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-success sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-success sticky-top" style="background-image:url(https://wallpaperset.com/w/full/6/6/4/125431.jpg); font-size: large;"> 
         <div class="container">
-            <a class="navbar-brand">Nerver Give Up</a>
-            <ul class="navbar-nav me-auto" style="margin-left: 25%;">
+            <a class="navbar-brand">Never Give Up</a>
+            <ul class="navbar-nav ms-auto me-5" style="gap: 20px">
                 <li class="nav-item">
-                    <a href="./header.html" class="nav-link">Home</a>
+                    <a href="./header footer.html" class="nav-link">Trang chủ</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Subject</a>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Môn học</a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Maths</a></li>
-                      <li><a class="dropdown-item" href="#">History</a></li>
-                      <li><a class="dropdown-item" href="#">Civic Education</a></li>
-                      <li><a class="dropdown-item" href="#">Literature</a></li>
+                        <li><a class="dropdown-item" href="#">Vũ Đạo và Nghệ Thuật</a></li>
+                        <li><a class="dropdown-item" href="#">Truyền Thông</a></li>
+                        <li><a class="dropdown-item" href="#">Triết Học Đại Cương</a></li>
+                        <li><a class="dropdown-item" href="#">Tài Chính - Ngân Hàng</a></li>
+                        <li><a class="dropdown-item" href="#">Kinh Tế Vi Mô</a></li>
+                        <li><a class="dropdown-item" href="#">Tâm Lý Học Đại Cương</a></li>
+                        <li><a class="dropdown-item" href="#">Tư Pháp Đại Cương</a></li>
+                        <li><a class="dropdown-item" href="#">Luật Đại Cương</a></li>
+                        <li><a class="dropdown-item" href="#">Tham Vấn</a></li>
+                        <li><a class="dropdown-item" href="#">Toán Cao Cấp</a></li>
+                        <li><a class="dropdown-item" href="#">Âm nhạc</a></li>
+                        <li><a class="dropdown-item" href="#">Kiến trúc</a></li>
+
+
                     </ul>
-                  </li>
-                <li class="nav-item">
-                    <a href="./contact.html" class="nav-link">Contact us</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./Quiz" class="nav-link">Quiz</a>
                 </li>
                 
-            </ul>
-
-            <ul class="navbar-nav">
-                <li class="nav-item me-2" >
-                    <button class="btn btn-outline-primary"><a class="nav-link" href="./login.html">Sign in</a></button>
+                <li class="nav-item">
+                    <a href="./Contact us.html" class="nav-link">Liên hệ</a>
                 </li>
                 <li class="nav-item">
-                    <button class="btn btn-outline-success"><a class="nav-link" href="./login.html">Sign up</a></button>
+                    <a href="./Quiz" class="nav-link">Đố vui</a>
+                </li>
+                <li style="position: relative;">
+                
+                    <div class="input-group">
+                        <input type="text" id="search" class="form-control" placeholder="Tìm kiếm" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+
+                    <div id="search-suggestion" style="position:absolute; margin-top: 10px; width: 100%;">
+                        <ul class="list-group"></ul>
+                    </div>
+                </li>
+
+            </ul>
+
+            <ul class="navbar-nav" id="navbar-abc">
+                <li class="nav-item-test me-2">
+                    <button class="btn btn-outline-primary"><a class="nav-link" href="./login.html">Đăng nhập</a></button>
+                </li>
+                <li class="nav-item-test">
+                    <button class="btn btn-outline-success"><a class="nav-link" href="./login.html">Đăng ký</a></button>
                 </li>
             </ul>
+           
         </div>
-        
-    </nav>
-    
 
+    </nav>
+
+<!-- Content web-->
+<br>
+<br>
+<div class="container">
+       
+    <div class="row" id="edu">
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="./anh/Chipuuu.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(./anh/bg2.png)">
+                    <b class="card-title">Chipu</b>
+                    
+                    <div>
+                        <p class="card-text">Vũ Đạo và Nghệ Thuật</p>
+                    <div>
+                        <a href="#" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="./anh/mono.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(./anh/bg3.png)">
+                    <b class="card-title">Mono</b>
+                    
+                    <div>
+                        <p class="card-text">Truyền Thông</p>
+                    <div>
+                        <a href="#" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="./anh/vuongnhatbac.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(./anh/bg4.png)">
+                    <b class="card-title">Vương Nhất Bác</b>
+                    
+                    <div>
+                        <p class="card-text">Triết Học Đại Cương</p>
+                    <div>
+                        <a href="#" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="./anh/ngoctrinh.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(./anh/bg5.png)">
+                    <b class="card-title">Ngọc Trinh</b>
+                    
+                    <div>
+                        <p class="card-text">Tài Chính - Ngân Hàng</p>
+                    <div>
+                        <a href="#" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="./anh/Phamthoai.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(./anh/bg6.png)">
+                    <b class="card-title">Phạm Thoại</b>
+                    
+                    <div>
+                        <p class="card-text">Kinh Tế Vi Mô</p>
+                    <div>
+                        <a href="#" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="./anh/meomeo.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(./anh/bg1.png)">
+                    <b class="card-title">Trần Đức Bo</b>
+                    
+                    <div>
+                        <p class="card-text">Tâm Lý Học Đại Cương</p>
+                    <div>
+                        <a href="#" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="./anh/sontungmtp.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(./anh/bg2.png)">
+                    <b class="card-title">Sơn Tùng MTP</b>
+                    
+                    <div>
+                        <p class="card-text">Tư Pháp Đại Cương</p>
+                    <div>
+                        <a href="#" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="./anh/phuonghang.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(./anh/bg3.png)">
+                    <b class="card-title">Phương Hằng</b>
+                    
+                    <div>
+                        <p class="card-text">Luật Đại Cương</p>
+                    <div>
+                        <a href="#" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="./anh/Huanhoahong.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(./anh/bg4.png)">
+                    <b class="card-title">Huấn Hoa Hồng</b>
+                    
+                    <div>
+                        <p class="card-text">Tham Vấn</p>
+                    <div>
+                        <a href="#" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="./anh/ChuTien.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(./anh/bg5.png)">
+                    <b class="card-title">Tiến Bịp (Bợm)</b>
+                    
+                    <div>
+                        <p class="card-text">Toán Cao Cấp</p>
+                    <div>
+                        <a href="#" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="./anh/damvinhhung.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(./anh/bg6.png)">
+                    <b class="card-title">Đàm Vĩnh Hưng</b>
+                    
+                    <div>
+                        <p class="card-text">Âm Nhạc</p>
+                    <div>
+                        <a href="#" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="./anh/Locphuho.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(./anh/bg1.png)">
+                    <b class="card-title">Lộc Fuho</b>
+                    
+                    <div>
+                        <p class="card-text">Kiến trúc</p>
+                    <div>
+                        <a href="#" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
     <!-- footer -->
 
-    <footer class="navbar navbar-dark bg-dark fixed-bottom" style="height: auto;">
+    <footer class="navbar navbar-dark bg-dark "  >
         <div class="container">
-          <div class="navbar-text">
-            <p>Fllow us</p>
-            <a href="https://www.facebook.com/" class="nav-link">Facebook<i class="fa-brands fa-facebook" style="margin-left: 5px;"></i></a>
-            <a href="https://www.instagram.com/" class="nav-link">Instagram<i class="fa-brands fa-instagram" style="margin-left: 5px;"></i></a>
-            <a href="https://twitter.com/" class="nav-link">Twitter<i class="fa-brands fa-twitter" style="margin-left: 5px;"></i></a>
-          </div>
-          <div class="navbar-text ms-auto">
-            <p>Where to listen</p>
-            <a href="https://www.youtube.com/" class="nav-link">Youtube<i class="fa-brands fa-youtube" style="margin-left: 5px;"></i></a>
-            <a href="https://open.spotify.com/" class="nav-link">Facebook<i class="fa-brands fa-spotify" style="margin-left: 5px;"></i></a>
-            <a href="https://soundcloud.com/" class="nav-link">Facebook<i class="fa-brands fa-soundcloud" style="margin-left: 5px;"></i></a>
-        </div>
-      </footer>
+            <div class="navbar-text">
+                <p>Theo dõi tại</p>
+                <a href="https://www.facebook.com/" class="nav-link">Facebook<i class="fa-brands fa-facebook" style="margin-left: 5px;"></i></a>
+                <a href="https://www.instagram.com/" class="nav-link">Instagram<i class="fa-brands fa-instagram" style="margin-left: 5px;"></i></a>
+                <a href="https://twitter.com/" class="nav-link">Twitter<i class="fa-brands fa-twitter" style="margin-left: 5px;"></i></a>
+            </div>
+            <div class="navbar-text ms-auto">
+                <p>Nghe thêm tại</p>
+                <a href="https://www.youtube.com/" class="nav-link">Youtube<i class="fa-brands fa-youtube" style="margin-left: 5px;"></i></a>
+                <a href="https://open.spotify.com/" class="nav-link">Spotify<i class="fa-brands fa-spotify" style="margin-left: 5px;"></i></a>
+                <a href="https://soundcloud.com/" class="nav-link">Soundcloud<i class="fa-brands fa-soundcloud" style="margin-left: 5px;"></i></a>
+            </div>
+    </footer>
+
+
+    <script src="./result_quiz.js"></script>
+    <script src="./timhiem.js"></script>
+    <script src="./search.js"></script>
+    <script src="./header.js"></script>
+
+
       
       
-      <script src="./result_quiz.js"></script>
+    
   <script src="./timhiem.js"></script>
 </body>
 </html>
