@@ -1,0 +1,73 @@
+/* for tablet */
+@media only screen and (min-width:740px) and (max-width:1024px) {
+  
+  .input-group{
+    display: none;
+  }
+  .nav-item {
+    font-size: 73%;
+  }
+  .nav-link {
+    font-size: 73%;
+  }
+}
+
+/* for mobie */
+@media only screen and (max-width:739px) {
+    .container {
+       width: 100%;
+    }
+    .nav-item{
+       display: none;
+    }
+    
+    .btn-all {
+       margin-left: 10%;
+       display: inline-block;
+       color: bisque;
+       position:relative;
+    }
+    
+    .btn-all:hover .menuu {
+       display:block;
+    }
+   
+    .menuu {
+       display:none;
+       position: absolute;
+       top:41.5px;
+       left: -800%;
+       
+    }
+    .menuu-item{
+       width:150px;
+       height:40px;
+       border:1px solid grey;
+   
+       background-image: url(https://wallpaperset.com/w/full/6/6/4/125431.jpg);
+       padding: 10px 10px 35px ;
+       text-align: center;
+    }
+    .container-huy {
+       flex-direction: column;
+       margin-left:20% ;
+      }
+    
+      
+      .image {
+       width: 70%;
+      }
+      .container-item {
+       
+       margin-top: 20px;
+       margin-left: 10px;
+       width: 80%;
+      }
+     
+   }
+
+   @media only screen and (max-width:400px) {
+        .me-5{
+            margin-right: 10px !important;
+        }
+   }
