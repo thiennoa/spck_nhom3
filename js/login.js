@@ -66,6 +66,7 @@ registerButton.addEventListener('click', () => {
 });
 
 // Đăng ký sự kiện click cho nút "Đăng nhập" trên form đăng nhập
+
 loginButton.addEventListener('click', () => {
    let isLoginSuccess = false;
    
@@ -84,7 +85,8 @@ loginButton.addEventListener('click', () => {
   
     
    if(isLoginSuccess===true){
-    window.location.assign("http://127.0.0.1:5500/header.html")
+    window.location.assign("http://127.0.0.1:5500/html/home.html")
+    
    } else {
     alert("Tên đăng nhập hoặc mật khẩu không đúng.")
    }

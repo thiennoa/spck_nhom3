@@ -1,0 +1,26 @@
+.logg-try{
+   margin-left: 10%;
+   display: inline-block;
+   
+   position:relative;
+}
+.logg-try :hover .logg {
+   display: block;
+}
+.logg{
+   display:none;
+   position: absolute;
+   top:160%;
+   left: -150%;
+}
+.logg-item{
+   background-color: purple;
+   color: yellow;
+   font-size: 70%;
+   /* width:180px;
+   height:40px; */
+   width: 150%;
+   height: 100%;
+   border:1px solid grey;
+   text-align: center;
+}

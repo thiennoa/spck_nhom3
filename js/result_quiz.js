@@ -4,14 +4,38 @@ const submitButton = document.querySelector('.submit-btn');
 
 // mảng tên nhân vật và truy xuất
 
-const nhanVat = [`Son Tung`,`Chi pu`,`Mono`,`Huan Hoa Hong`]
-const randomIndex = Math.floor(Math.random() * nhanVat.length);
-const randomName = nhanVat[randomIndex];
+const nhanVat = [`Sơn Tùng`, 
+				`Chi Pu`,
+				 `Mono`, 
+				 `Huấn Hoa Hồng`]
+const nhanVat2 = [
+	{
+		image: '/anh/sontungmtp.jpg', 
+		name: `Sơn Tùng 
+			<br> Bạn là người tài năng, nhiệt huyết và sáng tạo. Bạn cũng có khả năng cao sẽ trở thành tổng tài!`
+	},
+	{
+		image: '/anh/Chipuuu.jpg',
+		name: `Chi Pu 
+		<br> Bạn là người linh hoạt, quyến rũ, yêu thích khám phá và theo đuổi cái mới, những ý tưởng và hoạt động mới. `
+	},
+	{
+		image: '/anh/mono.jpg',
+		name: `Mono 
+		<br> Bạn là người nhanh nhẹn, nhiệt huyết và thông minh. Bạn luôn và trung tâm của sự chú ý và sự vui vẻ và bản chất bốc đồng của bạn thường rất hấp dẫn những người khác.`
+	},
+	{
+		image: '/anh/Huanhoahong.jpg',
+		name: `Huấn Hoa Hồng <br> Bạn là người biết nhìn xa trông rộng, biết truyền cảm hứng và vô cùng quyết đoán.`
+	}
+]
+const randomIndex = Math.floor(Math.random() * nhanVat2.length);
+const randomCharacter = nhanVat2[randomIndex];
 
-const chonNhanVat= document.querySelector("#nhanVat")
-function randomNhanVat(){
-	
-	chonNhanVat.innerHTML='Tính cách của bạn giống với: ' + randomName
+const chonNhanVat = document.querySelector("#nhanVat")
+function randomNhanVat() {
+
+	chonNhanVat.innerHTML = `Tính cách của bạn giống với: <img class="xyz" src="${randomCharacter.image}"> ${randomCharacter.name}`;
 }
 submitButton.addEventListener("click", randomNhanVat);
 
@@ -22,7 +46,7 @@ const questions = [
 		answers: {
 			a: "a",
 			b: "b",
-			
+
 		},
 		correctAnswer: "a",
 		correctAnswer1: "b"
@@ -32,7 +56,7 @@ const questions = [
 		answers: {
 			a: "a",
 			b: "b",
-			
+
 		},
 		correctAnswer: "a",
 		correctAnswer1: "b"
@@ -42,7 +66,7 @@ const questions = [
 		answers: {
 			a: "a",
 			b: "b",
-			
+
 		},
 		correctAnswer: "a",
 		correctAnswer1: "b"
@@ -52,7 +76,7 @@ const questions = [
 		answers: {
 			a: "a",
 			b: "b",
-			
+
 		},
 		correctAnswer: "a",
 		correctAnswer1: "b"
@@ -62,7 +86,7 @@ const questions = [
 		answers: {
 			a: "a",
 			b: "b",
-			
+
 		},
 		correctAnswer: "a",
 		correctAnswer1: "b"
@@ -72,7 +96,7 @@ const questions = [
 		answers: {
 			a: "a",
 			b: "b",
-			
+
 		},
 		correctAnswer: "a",
 		correctAnswer1: "b"
@@ -82,7 +106,7 @@ const questions = [
 		answers: {
 			a: "a",
 			b: "b",
-			
+
 		},
 		correctAnswer: "a",
 		correctAnswer1: "b"
@@ -92,7 +116,7 @@ const questions = [
 		answers: {
 			a: "a",
 			b: "b",
-			
+
 		},
 		correctAnswer: "a",
 		correctAnswer1: "b"
@@ -102,7 +126,7 @@ const questions = [
 		answers: {
 			a: "a",
 			b: "b",
-			
+
 		},
 		correctAnswer: "a",
 		correctAnswer1: "b"
@@ -112,7 +136,7 @@ const questions = [
 		answers: {
 			a: "a",
 			b: "b",
-			
+
 		},
 		correctAnswer: "a",
 		correctAnswer1: "b"
@@ -122,7 +146,7 @@ const questions = [
 		answers: {
 			a: "a",
 			b: "b",
-			
+
 		},
 		correctAnswer: "a",
 		correctAnswer1: "b"
@@ -132,7 +156,7 @@ const questions = [
 		answers: {
 			a: "a",
 			b: "b",
-			
+
 		},
 		correctAnswer: "a",
 		correctAnswer1: "b"
@@ -142,7 +166,7 @@ const questions = [
 		answers: {
 			a: "a",
 			b: "b",
-			
+
 		},
 		correctAnswer: "a",
 		correctAnswer1: "b"
@@ -152,7 +176,7 @@ const questions = [
 		answers: {
 			a: "a",
 			b: "b",
-			
+
 		},
 		correctAnswer: "a",
 		correctAnswer1: "b"
@@ -162,12 +186,12 @@ const questions = [
 		answers: {
 			a: "a",
 			b: "b",
-			
+
 		},
 		correctAnswer: "a",
 		correctAnswer1: "b"
 	}
-	
+
 ];
 
 const quizContainer = document.querySelector(".quiz-container");
@@ -182,7 +206,7 @@ function showResult() {
 	questions.forEach((currentQuestion, questionIndex) => {
 
 		const answerContainer = answerContainers[questionIndex];
-		const selector = `input[name=answer${questionIndex+1}]:checked`;
+		const selector = `input[name=answer${questionIndex + 1}]:checked`;
 		const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 		if (userAnswer === currentQuestion.correctAnswer || userAnswer === currentQuestion.correctAnswer1) {
 			numCorrect++;
@@ -193,22 +217,23 @@ function showResult() {
 			answerContainer.classList.remove("correct");
 		}
 	});
-	scoreContainer.innerHTML = `bạn đã điền ${numCorrect} trên ${questions.length} câu hỏi .`;
-	
-	resultContainer.style.display = "block" ;
-	
-	
+	if (numCorrect < 15) {
+		alert("Bạn phải điển đủ")
+	} else {
+		scoreContainer.innerHTML = `Bạn đã điền ${numCorrect} trên ${questions.length} câu hỏi .`;
 
-	
+		resultContainer.style.display = "block";
+	}
 }
+
+
 
 submitButton.addEventListener("click", showResult);
 
-// close result-container
 
-const closeResult= document.querySelector(".result-container")
-const nodeX= document.querySelector(".color")
+const closeResult = document.querySelector(".result-container")
+const nodeX = document.querySelector(".color")
 console.log("nodeX: ", nodeX)
 nodeX.onclick = () => {
-	closeResult.style.display="none";
+	closeResult.style.display = "none";
 }

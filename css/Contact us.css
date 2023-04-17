@@ -1,0 +1,146 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  html {
+	font-size: 16px;
+	line-height: 1.5;
+  }
+  
+  body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #f2f2f2;
+  }
+  .namee {
+	color: black;
+	font-size: 70%;
+	text-align: left;
+  }
+.dropbtn {
+	background-color: #4CAF50;
+	color: white;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	margin: 0;
+	list-style: none;
+  }
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+  
+  
+  .contactkhung {
+	width: 100%;
+	height: auto;
+	padding: 15% 5% 10%;
+	background: linear-gradient(90deg, rgb(63 61 97) 0%, rgba(252, 167, 213, 1) 35%, rgb(87 76 101) 100%);
+	text-align: center;
+	color: white;
+	font-size: xx-large;
+	
+	
+  }
+  
+  .noidung {
+	display: flex;
+	flex-direction: column;
+	padding-left: 10%; }
+  
+.nevergiveup {
+	font-size: xx-large;
+	color: linear-gradient(90deg, rgb(63 61 97) 0%, rgba(252, 167, 213, 1) 35%, rgb(87 76 101) 100%);;
+}
+
+
+  form {
+	
+	margin: 10px auto;
+	max-width: 100%;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+  }
+  
+  .name {
+	display: block;
+	margin-bottom: 10px;
+  }
+  
+  input,
+  textarea {
+	padding: 10px;
+	border: none;
+	border-bottom: 1px solid gray;
+	width: 100%;
+	margin-bottom: 20px;
+  }
+  
+  .inputmessage {
+	height: 150px;
+  }
+  
+  .contribution {
+	font-size: large;
+	margin-bottom: 10px;
+  }
+  
+  
+  button {
+	display: block;
+	margin: 20px auto 0;
+	padding: 10px 20px;
+	border: none;
+	background-color: cornflowerblue;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+  }
+  
+  button:hover {
+	background-color: #4c70d9;
+  	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  	transition: all 0.3s ease-in-out;
+
+  }
+  
+  @media (min-width: 768px) {
+	.noidung {
+	  flex-direction: row;
+	  justify-content: center;
+	}
+	
+	form {
+	  max-width: 500px;
+	}
+	
+	.inputmessage {
+	  height: 200px;
+	}
+	
+	.contribution {
+	  margin-bottom: 20px;
+	}
+	
+	button {
+	  margin-top: 20px;
+	  margin-bottom: 0;
+	}
+  }
+
