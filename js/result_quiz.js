@@ -10,22 +10,22 @@ const nhanVat = [`Sơn Tùng`,
 				 `Huấn Hoa Hồng`]
 const nhanVat2 = [
 	{
-		image: '/anh/sontungmtp.jpg', 
+		image: '/images/anh/sontungmtp.jpg', 
 		name: `Sơn Tùng 
 			<br> Bạn là người tài năng, nhiệt huyết và sáng tạo. Bạn cũng có khả năng cao sẽ trở thành tổng tài!`
 	},
 	{
-		image: '/anh/Chipuuu.jpg',
+		image: '/images/anh/Chipuuu.jpg',
 		name: `Chi Pu 
 		<br> Bạn là người linh hoạt, quyến rũ, yêu thích khám phá và theo đuổi cái mới, những ý tưởng và hoạt động mới. `
 	},
 	{
-		image: '/anh/mono.jpg',
+		image: '/images/anh/mono.jpg',
 		name: `Mono 
 		<br> Bạn là người nhanh nhẹn, nhiệt huyết và thông minh. Bạn luôn và trung tâm của sự chú ý và sự vui vẻ và bản chất bốc đồng của bạn thường rất hấp dẫn những người khác.`
 	},
 	{
-		image: '/anh/Huanhoahong.jpg',
+		image: '/images/anh/Huanhoahong.jpg',
 		name: `Huấn Hoa Hồng <br> Bạn là người biết nhìn xa trông rộng, biết truyền cảm hứng và vô cùng quyết đoán.`
 	}
 ]

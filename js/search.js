@@ -144,13 +144,13 @@
 
 
 
-// chuyển hướng trang tìm kiếm
-  function searchName(event) {
-    event.preventDefault(); // Ngăn chặn mặc định hành vi khi tìm kiếm
-    const searchTerm = document.getElementById("search").value;
-    const url = "https://www.google.com/search?q=" + searchTerm;
-    window.location.href = url; // Chuyển hướng đến trang tìm kiếm của Google
-  }
+// chuyển hướng trang tìm kiếm sang google
+//   function searchName(event) {
+//     event.preventDefault(); // Ngăn chặn mặc định hành vi khi tìm kiếm
+//     const searchTerm = document.getElementById("search").value;
+//     const url = "https://www.google.com/search?q=" + searchTerm;
+//     window.location.href = url; // Chuyển hướng đến trang tìm kiếm của Google
+//   }
 
-const changeWeb = document.getElementById("basic-addon2")
-changeWeb.addEventListener('click',searchName)
+// const changeWeb = document.getElementById("basic-addon2")
+// changeWeb.addEventListener('click',searchName)
