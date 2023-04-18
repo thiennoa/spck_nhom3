@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/result_quiz.css">
+
+	<!-- thêm css cho header -->
+	<!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+   	<link rel="stylesheet" href="/css/home.css">
+    
+    <link rel="stylesheet" href="https://fontawesome.com/icons/user-group-crown?f=classic&s=regular">
+    <link rel="stylesheet" href="/css/respon.css">
+
+    <link rel="stylesheet" href="/css/header.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz Example</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<!-- header -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-success sticky-top" style="background-image:url(https://wallpaperset.com/w/full/6/6/4/125431.jpg); font-size: large;"> 
+        <div class="container">
+            <a class="navbar-brand" href="/html/home.html"><img src="/images/anh/LOGO (1).png" style="width: 100%;height: 50px"></a>
+            <ul class="navbar-nav ms-auto me-5" style="gap: 20px">
+                <li class="nav-item">
+                    <a href="./home.html" class="nav-link">Trang chủ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Môn học</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Vũ Đạo và Nghệ Thuật</a></li>
+                        <li><a class="dropdown-item" href="#">Truyền Thông</a></li>
+                        <li><a class="dropdown-item" href="#">Triết Học Đại Cương</a></li>
+                        <li><a class="dropdown-item" href="#">Tài Chính - Ngân Hàng</a></li>
+                        <li><a class="dropdown-item" href="#">Kinh Tế Vi Mô</a></li>
+                        <li><a class="dropdown-item" href="#">Tâm Lý Học Đại Cương</a></li>
+                        <li><a class="dropdown-item" href="#">Tư Pháp Đại Cương</a></li>
+                        <li><a class="dropdown-item" href="#">Luật Đại Cương</a></li>
+                        <li><a class="dropdown-item" href="#">Tham Vấn</a></li>
+                        <li><a class="dropdown-item" href="#">Toán Cao Cấp</a></li>
+                        <li><a class="dropdown-item" href="#">Âm nhạc</a></li>
+                        <li><a class="dropdown-item" href="#">Kiến trúc</a></li>
+
+
+                    </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="./Contact us.html" class="nav-link">Liên hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/html/result_quiz.html" class="nav-link">Đố vui</a>
+                </li>
+                <li style="position: relative;">
+                
+                    <div class="input-group">
+                        <input type="text" id="search" class="form-control" placeholder="Tìm kiếm" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+
+                    <div id="search-suggestion" style="position:absolute; margin-top: 10px; width: 100%;">
+                        <ul class="list-group"></ul>
+                    </div>
+                </li>
+
+            </ul>
+
+            <ul class="navbar-nav" id='navbar-abc'>
+                <li class="nav-item me-2">
+                    <button class="btn btn-outline-primary"><a class="nav-link" href="/html/login.html">Đăng nhập</a></button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-success"><a class="nav-link" href="/html/login.html">Đăng ký</a></button>
+                </li>
+            </ul>
+            <header class="btn-all"><i class="fas fa-grip-lines"></i>
+               
+                <div class="menuu">
+                    <div class="menuu-item">Đăng nhập</div>
+                    <div class="menuu-item">Đăng ký</div>
+                    <div class="menuu-item">Môn học</div>
+                    <div class="menuu-item">Liên hệ</div>
+                    <div class="menuu-item"> Đố vui</div>
+                </div>
+                
+            </header>
+        </div>
+
+    </nav>
+	
+	<div class="quiz-container">
+		<div class="question">Câu hỏi 1: Trong một buổi tiệc, bạn sẽ:</div>
+		<div class="answers">
+			<input type="radio" name="answer1" value="a"> a. Nói chuyện với tất cả mọi người, kể cả người lạ<br>
+			<input type="radio" name="answer1" value="b"> b. Nói chuyện với những người bạn quen<br>
+			
+		</div>
+
+		<div class="question">Câu hỏi 2: Bạn cảm thấy tối nhất vào thời gian nào?</div>
+		<div class="answers">
+			<input type="radio" name="answer2" value="a"> a. Buổi sáng<br>
+			<input type="radio" name="answer2" value="b"> b. Buổi tối<br>
+			
+		</div>
+
+		<div class="question">Câu hỏi 3: Tình huống nào khiến bạn cảm thấy tệ hơn?</div>
+		<div class="answers">
+			<input type="radio" name="answer3" value="a"> a. Mọi thứ mông lung, không rõ ràng<br>
+			<input type="radio" name="answer3" value="b"> b. Nhàm chán, đơn điệu<br>
+			
+		</div>
+
+		<div class="question">Câu hỏi 4: Bạn thấy ấn tượng bởi:</div>
+		<div class="answers">
+			<input type="radio" name="answer4" value="a"> a. Nguyên lý, nguyên tắc<br>
+			<input type="radio" name="answer4" value="b"> b. Cảm xúc, tình cảm<br>
+			
+		</div>
+
+		<div class="question">Câu hỏi 5: Bạn có xu hướng nghiêng về:</div>
+		<div class="answers">
+			<input type="radio" name="answer5" value="a"> a. Những gì có tính thuyết phục<br>
+			<input type="radio" name="answer5" value="b"> b. Những gì cảm động<br>
+			
+		</div>
+
+		<div class="question">Câu hỏi 6: Bạn thích làm việc:</div>
+		<div class="answers">
+			<input type="radio" name="answer6" value="a"> a. Theo thời hạn (deadline)<br>
+			<input type="radio" name="answer6" value="b"> b. Tùy hứng<br>
+			
+		</div>
+
+		<div class="question">Câu hỏi 7: Khi lựa chọn, bạn thường:</div>
+		<div class="answers">
+			<input type="radio" name="answer7" value="a"> a. Khá cẩn thận, xem xét kĩ lưỡng<br>
+			<input type="radio" name="answer7" value="b"> b. Tin vào cảm giác lúc lựa chọn<br>
+			
+		</div>
+
+		<div class="question">Câu hỏi 8: Tại các buổi gặp mặt, bạn sẽ:?</div>
+		<div class="answers">
+			<input type="radio" name="answer8" value="a"> a. Ở lại đến cuối buổi, càng lúc càng phấn khích<br>
+			<input type="radio" name="answer8" value="b"> b. Ra về sớm và cảm thấy mệt<br>
+			
+		</div>
+
+		<div class="question">Câu hỏi 9: Tuýp người nào sẽ thu hút bạn hơn?</div>
+		<div class="answers">
+			<input type="radio" name="answer9" value="a"> a. Người có đầu óc xét đoán, biết điều<br>
+			<input type="radio" name="answer9" value="b"> b. Người có khả năng tưởng tượng phong phú<br>
+			
+		</div>
+
+		<div class="question">Câu hỏi 10: Bạn hứng thú hơn với:</div>
+		<div class="answers">
+			<input type="radio" name="answer10" value="a"> a. Những việc thực tế xảy ra<br>
+			<input type="radio" name="answer10" value="b"> b. Những việc có khả năng xảy ra<br>
+			
+		</div>
+
+		<div class="question">Câu hỏi 11: Khi đánh giá người khác, bạn thường:</div>
+		<div class="answers">
+			<input type="radio" name="answer11" value="a"> a. Dựa trên các quy định, luật lệ<br>
+			<input type="radio" name="answer11" value="b"> b. Dựa trên hoàn cảnh cụ thể<br>
+			
+		</div>
+
+		<div class="question">Câu hỏi 12: Khi tiếp cận người khác, bạn nghiêng về:</div>
+		<div class="answers">
+			<input type="radio" name="answer12" value="a"> a. Tiếp cận khách quan<br>
+			<input type="radio" name="answer12" value="b"> b. Tiếp cận cá nhân<br>
+			
+		</div>
+
+		<div class="question">Câu hỏi 13: Phong cách đúng với bạn hơn?</div>
+		<div class="answers">
+			<input type="radio" name="answer13" value="a"> a. Đúng giờ<br>
+			<input type="radio" name="answer13" value="b"> b. Nhàn nhã, thoải mái<br>
+			
+		</div>
+
+		<div class="question">Câu hỏi 14: Bạn bồn chồn khi có những việc:</div>
+		<div class="answers">
+			<input type="radio" name="answer14" value="a"> a. Chưa hoàn thiện<br>
+			<input type="radio" name="answer14" value="b"> b. Đã hoàn thiện<br>
+			
+		</div>
+
+		<div class="question">Câu hỏi 15: Bạn là người:</div>
+		<div class="answers">
+			<input type="radio" name="answer15" value="a"> a. Luôn nắm bắt kịp thời thông tin về các vấn đề của mọi người<br>
+			<input type="radio" name="answer15" value="b"> b. Thường biết thông tin sau<br>
+			
+		</div>
+
+		<button class="submit-btn">Submit</button>
+        
+	</div>
+    
+	
+    <div class="result-container">
+		<i style="margin-left: 99% ; margin-top: 0%;" class="fa-solid fa-circle-xmark color" ></i>
+		<p id="score"></p>
+        <h2 id="nhanVat"></h2>
+        
+        
+    </div>
+   
+
+
+
+    <script src="/js/result_quiz.js"></script>
+
+	<!-- js header -->
+	<script src="/js/data.js"></script>
+    <script src="/js/detail.js"></script>
+    <script src="/js/home.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/search.js"></script>
+    <script src="/js/login.js"></script>
+    <script src="/js/result_quiz.js"></script>
+</body>
+</html>

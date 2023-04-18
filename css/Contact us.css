@@ -11,7 +11,7 @@
   }
   
   body {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Be Vietnam Pro', sans-serif;
 	background-color: #f2f2f2;
   }
   .namee {
@@ -43,7 +43,7 @@
 	display: block;
   }
   
-  
+
   .contactkhung {
 	width: 100%;
 	height: auto;
@@ -59,7 +59,8 @@
   .noidung {
 	display: flex;
 	flex-direction: column;
-	padding-left: 10%; }
+	padding-left: 10%;
+ }
   
 .nevergiveup {
 	font-size: xx-large;

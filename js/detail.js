@@ -132,7 +132,84 @@ for(let i = 0; i<data.length; i++){
 const string = `Đây là bài viết ${id}`;
 let strSubString = content.content.slice(1);
 
-document.getElementById('id-post').innerHTML = ` <div class="container-tong">
+document.getElementById('id-post').innerHTML = ` 
+
+<!-- header -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-success sticky-top" style="background-image:url(https://wallpaperset.com/w/full/6/6/4/125431.jpg); font-size: large;"> 
+        <div class="container">
+            <a class="navbar-brand" href="/html/home.html"><img src="/images/anh/LOGO (1).png" style="width: 100%;height: 50px"></a>
+            <ul class="navbar-nav ms-auto me-5" style="gap: 20px">
+                <li class="nav-item">
+                    <a href="./home.html" class="nav-link">Trang chủ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Môn học</a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=1">Vũ Đạo và Nghệ Thuật</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=2">Truyền Thông</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=3">Triết Học Đại Cương</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=4">Tài Chính - Ngân Hàng</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=5">Kinh Tế Vi Mô</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=6">Tâm Lý Học Đại Cương</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=7">Tư Pháp Đại Cương</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=8">Luật Đại Cương</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=9">Tham Vấn</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=10">Toán Cao Cấp</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=11">Âm nhạc</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=12">Kiến trúc</a></li>
+
+
+                    </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="./Contact us.html" class="nav-link">Liên hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/html/result_quiz.html" class="nav-link">Đố vui</a>
+                </li>
+                <li style="position: relative;">
+                
+                    <div class="input-group">
+                        <input type="text" id="search" class="form-control" placeholder="Tìm kiếm" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+
+                    <div id="search-suggestion" style="position:absolute; margin-top: 10px; width: 100%;">
+                        <ul class="list-group"></ul>
+                    </div>
+                </li>
+
+            </ul>
+
+            <ul class="navbar-nav" id='navbar-abc'>
+                <li class="nav-item me-2">
+                    <button class="btn btn-outline-primary"><a class="nav-link" href="/html/login.html">Đăng nhập</a></button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-success"><a class="nav-link" href="/html/login.html">Đăng ký</a></button>
+                </li>
+            </ul>
+            <header class="btn-all"><i class="fas fa-grip-lines"></i>
+               
+                <div class="menuu">
+                    <div class="menuu-item">Đăng nhập</div>
+                    <div class="menuu-item">Đăng ký</div>
+                    <div class="menuu-item">Môn học</div>
+                    <div class="menuu-item">Liên hệ</div>
+                    <div class="menuu-item"> Đố vui</div>
+                </div>
+                
+            </header>
+        </div>
+
+    </nav>
+
+
+
+
+
+<div class="container-tong">
 <h1 class="interview" style=" margin-top: 50px;margin-left: 50px;font-size: 50px;">${content.interView}</h1>
 <div class="container-huy"   >
 <div class="image" style="background: url(${content.color})">
