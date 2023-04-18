@@ -145,18 +145,18 @@ document.getElementById('id-post').innerHTML = `
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Môn học</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Vũ Đạo và Nghệ Thuật</a></li>
-                        <li><a class="dropdown-item" href="#">Truyền Thông</a></li>
-                        <li><a class="dropdown-item" href="#">Triết Học Đại Cương</a></li>
-                        <li><a class="dropdown-item" href="#">Tài Chính - Ngân Hàng</a></li>
-                        <li><a class="dropdown-item" href="#">Kinh Tế Vi Mô</a></li>
-                        <li><a class="dropdown-item" href="#">Tâm Lý Học Đại Cương</a></li>
-                        <li><a class="dropdown-item" href="#">Tư Pháp Đại Cương</a></li>
-                        <li><a class="dropdown-item" href="#">Luật Đại Cương</a></li>
-                        <li><a class="dropdown-item" href="#">Tham Vấn</a></li>
-                        <li><a class="dropdown-item" href="#">Toán Cao Cấp</a></li>
-                        <li><a class="dropdown-item" href="#">Âm nhạc</a></li>
-                        <li><a class="dropdown-item" href="#">Kiến trúc</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=1">Vũ Đạo và Nghệ Thuật</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=2">Truyền Thông</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=3">Triết Học Đại Cương</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=4">Tài Chính - Ngân Hàng</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=5">Kinh Tế Vi Mô</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=6">Tâm Lý Học Đại Cương</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=7">Tư Pháp Đại Cương</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=8">Luật Đại Cương</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=9">Tham Vấn</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=10">Toán Cao Cấp</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=11">Âm nhạc</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=12">Kiến trúc</a></li>
 
 
                     </ul>
