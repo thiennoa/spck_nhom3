@@ -114,6 +114,15 @@ div#edu {
     width: 75.4%;
     height: 85%;
 }
+
 /* .navbar navbar-expand-sm navbar-dark bg-success sticky-top {
   background: linear-gradient(90deg, rgb(63 61 97) 0%, rgba(252, 167, 213, 1) 35%, rgb(87 76 101) 100%);
 
+  @media only screen and (max-width:400px) {
+        .me-5{
+            margin-right: 10px !important;
+        }
+      .container-huy {
+         margin-left: 100px !important;
+      }
+   
