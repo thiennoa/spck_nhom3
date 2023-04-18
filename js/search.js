@@ -108,6 +108,8 @@
     showSuggestions(results, inputVal);
   }
   
+
+  // hàm hiển thị gợi ý
   function showSuggestions(results, inputVal) {
       
       suggestions.innerHTML = '';
@@ -138,3 +140,17 @@
   
   input.addEventListener('keyup', searchHandler);
   suggestions.addEventListener('click', useSuggestion);
+
+
+
+
+// chuyển hướng trang tìm kiếm
+  function searchName(event) {
+    event.preventDefault(); // Ngăn chặn mặc định hành vi khi tìm kiếm
+    const searchTerm = document.getElementById("search").value;
+    const url = "https://www.google.com/search?q=" + searchTerm;
+    window.location.href = url; // Chuyển hướng đến trang tìm kiếm của Google
+  }
+
+const changeWeb = document.getElementById("basic-addon2")
+changeWeb.addEventListener('click',searchName)
