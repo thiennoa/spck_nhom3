@@ -34,14 +34,18 @@
 /* css cho trả lời và đưa ra kết quả*/
 
  .result-container {
-	max-width: 500px;
-	margin: 0 auto;
+	max-width: 400px;
 	padding: 20px;
-	background-color:lightslategray ;
+	background-color:dimgrey;
 	border: 1px solid #ddd;
 	border-radius: 25px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 	display: none;
+	color:white;
+	margin-top:32px;
+	
+	
+
 }
 
 .result-container h2 {
