@@ -211,7 +211,7 @@ document.getElementById('id-post').innerHTML = `
 
 <div class="container-tong">
 <h1 class="interview" style=" margin-top: 50px;margin-left: 50px;font-size: 50px;">${content.interView}</h1>
-<div class="container-huy"  >
+<div class="container-huy"   >
 <div class="image" style="background: url(${content.color})">
 <img class="image-item" src="${content.src}"
 alt="img">

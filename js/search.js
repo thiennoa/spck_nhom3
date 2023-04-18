@@ -99,6 +99,7 @@
     return results;
   }
   
+  
   function searchHandler(e) {
     const inputVal = e.currentTarget.value;
     let results = [];
@@ -131,6 +132,8 @@
     }
   }
   
+  
+  
   function useSuggestion(e) {
     input.value = e.target.innerText;
     input.focus();
@@ -142,15 +145,35 @@
   suggestions.addEventListener('click', useSuggestion);
 
 
-
-
 // chuyển hướng trang tìm kiếm sang google
-//   function searchName(event) {
-//     event.preventDefault(); // Ngăn chặn mặc định hành vi khi tìm kiếm
-//     const searchTerm = document.getElementById("search").value;
-//     const url = "https://www.google.com/search?q=" + searchTerm;
-//     window.location.href = url; // Chuyển hướng đến trang tìm kiếm của Google
-//   }
+  function searchName(event) {
+    event.preventDefault(); // Ngăn chặn mặc định hành vi khi tìm kiếm
+    
+    const searchTerm = document.getElementById("search").value;
+    const resultData=data.find((item)=> item.name===searchTerm) 
+    
+    const url = "http://127.0.0.1:5500/html/detail.html?id=" + resultData.id;
+    window.location.href = url; // Chuyển hướng đến trang tìm kiếm của Google
+    
+  }
 
-// const changeWeb = document.getElementById("basic-addon2")
-// changeWeb.addEventListener('click',searchName)
+const changeWeb = document.getElementById("basic-addon2")
+changeWeb.addEventListener('click',searchName)
+
+
+
+// function getValue() {
+//   let input = document.querySelector('#search');
+//   let value = input.value;
+//   console.log(value);
+// }
+
+// const buttonSearch = document.getElementById('basic-addon2')
+// function searchByName() {
+//   const value = input.value
+//   buttonSearch.addEventListener('click', getValue 
+//   )
+// }
+// searchByName();
+
+
