@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+   <link rel="stylesheet" href="/css/home.css">
+    
+    <link rel="stylesheet" href="https://fontawesome.com/icons/user-group-crown?f=classic&s=regular">
+    <link rel="stylesheet" href="/css/respon.css">
+
+
+   
+
+   
+    <link rel="stylesheet" href="/css/header.css">
+    
+    
+
+</head>
+
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-success sticky-top" style="background-image:url(https://wallpaperset.com/w/full/6/6/4/125431.jpg); font-size: large;"> 
+        <div class="container">
+            <a class="navbar-brand" href="/html/home.html"><img src="/images/anh/LOGO (1).png" style="width: 100%;height: 50px"></a>
+            <ul class="navbar-nav ms-auto me-5" style="gap: 20px">
+                <li class="nav-item">
+                    <a href="./home.html" class="nav-link">Trang chủ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Môn học</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=1">Vũ Đạo và Nghệ Thuật</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=2">Truyền Thông</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=3">Triết Học Đại Cương</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=4">Tài Chính - Ngân Hàng</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=5">Kinh Tế Vi Mô</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=6">Tâm Lý Học Đại Cương</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=7">Tư Pháp Đại Cương</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=8">Luật Đại Cương</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=9">Tham Vấn</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=10">Toán Cao Cấp</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=11">Âm nhạc</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/html/detail.html?id=12">Kiến trúc</a></li>
+
+
+                    </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="./Contact us.html" class="nav-link">Liên hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/html/result_quiz.html" class="nav-link">Đố vui</a>
+                </li>
+                <li style="position: relative;">
+                
+                    <div class="input-group">
+                        <input type="text" id="search" class="form-control" placeholder="Tìm kiếm" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+
+                    <div id="search-suggestion" style="position:absolute; margin-top: 10px; width: 100%;">
+                        <ul class="list-group"></ul>
+                    </div>
+                </li>
+
+            </ul>
+
+            <ul class="navbar-nav" id='navbar-abc'>
+                <li class="nav-item me-2">
+                    <button class="btn btn-outline-primary"><a class="nav-link" href="/html/login.html">Đăng nhập</a></button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-success"><a class="nav-link" href="/html/login.html">Đăng ký</a></button>
+                </li>
+            </ul>
+            <header class="btn-all"><i class="fas fa-grip-lines"></i>
+               
+                <div class="menuu">
+                    <div class="menuu-item">Đăng nhập</div>
+                    <div class="menuu-item">Đăng ký</div>
+                    <div class="menuu-item">Môn học</div>
+                    <div class="menuu-item">Liên hệ</div>
+                    <div class="menuu-item"> Đố vui</div>
+                </div>
+                
+            </header>
+        </div>
+
+    </nav>
+
+<!-- Content web-->
+<br>
+<br>
+<div class="container">
+    
+       
+    <div class="row" id="edu">
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="/images/anh/Chipuuu.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(/images/anh/bg2.png)">
+                    <b class="card-title">Chipu</b>
+                    
+                    <div>
+                        <p class="card-text">Vũ Đạo và Nghệ Thuật</p>
+                    <div>
+                        <a href="detail.html?id=1" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="/images/anh/mono.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(/images/anh/bg3.png)">
+                    <b class="card-title">Mono</b>
+                    
+                    <div>
+                        <p class="card-text">Truyền Thông</p>
+                    <div>
+                        <a href="detail.html?id=2" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="/images/anh/vuongnhatbac.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(/images/anh/bg4.png)">
+                    <b class="card-title">Vương Nhất Bác</b>
+                    
+                    <div>
+                        <p class="card-text">Triết Học Đại Cương</p>
+                    <div>
+                        <a href="detail.html?id=3" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="/images/anh/ngoctrinh.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(/images/anh/bg5.png)">
+                    <b class="card-title">Ngọc Trinh</b>
+                    
+                    <div>
+                        <p class="card-text">Tài Chính - Ngân Hàng</p>
+                    <div>
+                        <a href="detail.html?id=4" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="/images/anh/Phamthoai.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(/images/anh/bg6.png)">
+                    <b class="card-title">Phạm Thoại</b>
+                    
+                    <div>
+                        <p class="card-text">Kinh Tế Vi Mô</p>
+                    <div>
+                        <a href="detail.html?id=5" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="/images/anh/meomeo.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(/images/anh/bg1.png)">
+                    <b class="card-title">Trần Đức Bo</b>
+                    
+                    <div>
+                        <p class="card-text">Tâm Lý Học Đại Cương</p>
+                    <div>
+                        <a href="detail.html?id=6" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="/images/anh/sontungmtp.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(/images/anh/bg2.png)">
+                    <b class="card-title">Sơn Tùng MTP</b>
+                    
+                    <div>
+                        <p class="card-text">Tư Pháp Đại Cương</p>
+                    <div>
+                        <a href="detail.html?id=7" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="/images/anh/phuonghang.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(/images/anh/bg3.png)">
+                    <b class="card-title">Phương Hằng</b>
+                    
+                    <div>
+                        <p class="card-text">Luật Đại Cương</p>
+                    <div>
+                        <a href="detail.html?id=8" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="/images/anh/Huanhoahong.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(/images/anh/bg4.png)">
+                    <b class="card-title">Huấn Hoa Hồng</b>
+                    
+                    <div>
+                        <p class="card-text">Tham Vấn</p>
+                    <div>
+                        <a href="detail.html?id=9" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="/images/anh/ChuTien.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(/images/anh/bg5.png)">
+                    <b class="card-title">Tiến Bịp (Bợm)</b>
+                    
+                    <div>
+                        <p class="card-text">Toán Cao Cấp</p>
+                    <div>
+                        <a href="detail.html?id=10" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="/images/anh/damvinhhung.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(/images/anh/bg6.png)">
+                    <b class="card-title">Đàm Vĩnh Hưng</b>
+                    
+                    <div>
+                        <p class="card-text">Âm Nhạc</p>
+                    <div>
+                        <a href="detail.html?id=11" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mb-3">
+            <div class="card">
+                <img class="card-img-toppp"
+                    src="/images/anh/Locphuho.jpg"
+                    alt="">
+                <div class="card-body" style="background-image: url(/images/anh/bg1.png)">
+                    <b class="card-title">Lộc Fuho</b>
+                    
+                    <div>
+                        <p class="card-text">Kiến trúc</p>
+                    <div>
+                        <a href="detail.html?id=12" class="btn btn-dark btn-sm">Bài Học</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+    <!-- footer -->
+
+    <footer class="navbar navbar-dark bg-dark "  >
+        <div class="container">
+            <div class="navbar-text">
+                <p>Theo dõi tại</p>
+                <a href="https://www.facebook.com/" class="nav-link">Facebook<i class="fa-brands fa-facebook" style="margin-left: 5px;"></i></a>
+                <a href="https://www.instagram.com/" class="nav-link">Instagram<i class="fa-brands fa-instagram" style="margin-left: 5px;"></i></a>
+                <a href="https://twitter.com/" class="nav-link">Twitter<i class="fa-brands fa-twitter" style="margin-left: 5px;"></i></a>
+            </div>
+            <div class="navbar-text ms-auto">
+                <p>Nghe thêm tại</p>
+                <a href="https://www.youtube.com/" class="nav-link">Youtube<i class="fa-brands fa-youtube" style="margin-left: 5px;"></i></a>
+                <a href="https://open.spotify.com/" class="nav-link">Spotify<i class="fa-brands fa-spotify" style="margin-left: 5px;"></i></a>
+                <a href="https://soundcloud.com/" class="nav-link">Soundcloud<i class="fa-brands fa-soundcloud" style="margin-left: 5px;"></i></a>
+            </div>
+    </footer>
+
+
+
+ 
+    <script src="/js/data.js"></script>
+    <!-- <script src="/js/detail.js"></script> -->
+    <script src="/js/home.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/search.js"></script>
+    <script src="/js/login.js"></script>
+    <script src="/js/result_quiz.js"></script>
+</body>
+
+</html>
